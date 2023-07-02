@@ -15,8 +15,8 @@
 
 
 <div class="scroller">
-  {#each imageUrls as imageUrl}
-      <img src=data:image/{imageUrl} id={imageUrl} alt="" style="height: {height}px;" on:click={image_onclick}>
+  {#each imageUrls as imageUrl, i}
+      <a>{i+1}</a><img src=data:image/jpeg;base64,{imageUrl} id={imageUrl} alt="" style="height: {height}px;" on:click={image_onclick}>
   {/each}
 </div>
 
