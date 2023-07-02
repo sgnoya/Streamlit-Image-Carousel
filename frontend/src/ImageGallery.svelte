@@ -16,7 +16,7 @@
 
 <div class="scroller">
   {#each imageUrls as imageUrl}
-      <img src={imageUrl} id={imageUrl} alt="" style="height: {height}px;" on:click={image_onclick}>
+      <img src=data:image/{imageUrl} id={imageUrl} alt="" style="height: {height}px;" on:click={image_onclick}>
   {/each}
 </div>
 
